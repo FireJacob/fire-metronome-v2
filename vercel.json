@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "rewrites": [
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist/public",
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/dist/public/$1"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
